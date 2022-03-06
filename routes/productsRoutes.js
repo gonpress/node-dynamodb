@@ -17,6 +17,7 @@ router.get('/', async(req, res) => {
             res.status(500).json({
                     success:'false',
                     message:'Error : Server error',
+                    error:err,
                 }
             )
         } else{
@@ -45,6 +46,7 @@ router.get('/:id', async(req, res) => {
             res.status(500).json({
                     success:'false',
                     message:'Error : Server error',
+                    error:err,
                 }
             )
         } else{
@@ -77,6 +79,7 @@ router.post('/', async(req, res) => {
             res.status(500).json({
                     success:'false',
                     message:'Error : Server error',
+                    error:err,
                 }
             )
         } else{
@@ -121,6 +124,7 @@ router.put('/:id', async(req, res) => {
             res.status(500).json({
                     success:'false',
                     message:'Error : Server error',
+                    error:err,
                 }
             )
         } else{
@@ -149,6 +153,7 @@ router.delete('/:id', async(req, res) => {
             res.status(500).json({
                     success:'false',
                     message:'Error : Server error',
+                    error:err,
                 }
             )
         } else{
